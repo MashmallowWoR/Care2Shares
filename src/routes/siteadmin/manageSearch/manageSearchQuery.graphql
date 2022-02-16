@@ -1,0 +1,17 @@
+query($currentPage:Int,$searchList:String){
+  getSearchHistory(currentPage:$currentPage,searchList:$searchList){
+    status
+    errorMessage
+    count
+    results{
+      id
+      lat
+      lng
+      location
+      phoneNumber
+      email
+      firstName
+      createdAt
+    }
+  }
+}
